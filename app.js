@@ -6,7 +6,7 @@ let p = document.querySelector('p')
 prevBtn.onclick = ()=> {
     slider.prepend(slider.querySelector('img:last-child'))
     slider.animate([
-        { transform: 'translatex(-100%)' },
+        { transform: 'translatex(100%)' },
         { transform: 'translatex(0)' }
       ], {
         duration: 500,
@@ -43,7 +43,7 @@ prevBtn.onclick = ()=> {
 nextBtn.onclick = ()=> {
     slider.append(slider.querySelector('img:first-child'))
     slider.animate([
-        { transform: 'translatex(100%)' },
+        { transform: 'translatex(-100%)' },
         { transform: 'translatex(0)' }
       ], {
         duration: 500,
